@@ -19,7 +19,8 @@ RUN ln -sf /opt/bitnami/$BITNAMI_APP_NAME/data /app
 
 COPY rootfs /
 
-VOLUME ["/bitnami/$BITNAMI_APP_NAME"]
+#VOLUME ["/bitnami/$BITNAMI_APP_NAME"]
+VOLUME ["/opt/bitnami"]
 
 EXPOSE 8080
 
